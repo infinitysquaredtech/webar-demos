@@ -12,7 +12,7 @@ AFRAME.registerComponent('cloak', {
 
 AFRAME.registerComponent("bottle-mod", {
   init: function() {
-    var targetCube = new THREE.WebGLRenderTargetCube(512, 512);
+    var targetCube = new THREE.WebGLCubeRenderTarget(512);
     var renderer = this.el.sceneEl.renderer;
 
     this.el.addEventListener("model-loaded", e => {
